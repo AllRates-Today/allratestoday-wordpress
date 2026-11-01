@@ -1,0 +1,20 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "allratestoday/official-rate",
+	"version": "1.0.0",
+	"title": "Official Exchange Rate",
+	"category": "widgets",
+	"icon": "bank",
+	"description": "One currency pair as published by a central bank or tax authority, with its publication date.",
+	"keywords": [ "central bank", "exchange rate", "ecb", "official rate" ],
+	"textdomain": "allratestoday-currency-converter",
+	"attributes": {
+		"bank": { "type": "string", "default": "ecb" },
+		"source": { "type": "string", "default": "USD" },
+		"target": { "type": "string", "default": "EUR" },
+		"theme": { "type": "string", "enum": [ "light", "dark" ], "default": "light" }
+	},
+	"supports": { "html": false },
+	"editorScript": "file:./index.js"
+}

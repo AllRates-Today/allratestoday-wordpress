@@ -1,0 +1,20 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "allratestoday/converter",
+	"version": "1.0.0",
+	"title": "Currency Converter",
+	"category": "widgets",
+	"icon": "money-alt",
+	"description": "Live currency converter. Free ECB reference rates, or real-time rates with an AllRatesToday API key.",
+	"keywords": [ "currency", "exchange rate", "converter", "forex" ],
+	"textdomain": "allratestoday-currency-converter",
+	"attributes": {
+		"base": { "type": "string", "default": "USD" },
+		"target": { "type": "string", "default": "EUR" },
+		"amount": { "type": "number", "default": 1 },
+		"theme": { "type": "string", "enum": [ "light", "dark" ], "default": "light" }
+	},
+	"supports": { "html": false, "align": [ "wide", "full" ] },
+	"editorScript": "file:./index.js"
+}
