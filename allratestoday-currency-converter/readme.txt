@@ -1,5 +1,5 @@
 === AllRatesToday Currency Converter ===
-Contributors: allratestoday
+Contributors: chathurangac8
 Tags: currency converter, exchange rates, currency, central bank, widget
 Requires at least: 6.3
 Tested up to: 7.1
